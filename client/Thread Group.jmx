@@ -21,12 +21,12 @@
         <stringProp name="ThreadGroup.num_threads">30</stringProp>
         <stringProp name="ThreadGroup.ramp_time">1</stringProp>
         <boolProp name="ThreadGroup.scheduler">true</boolProp>
-        <stringProp name="ThreadGroup.duration">500</stringProp>
+        <stringProp name="ThreadGroup.duration">100</stringProp>
         <stringProp name="ThreadGroup.delay"></stringProp>
         <boolProp name="ThreadGroup.same_user_on_next_iteration">true</boolProp>
       </ThreadGroup>
       <hashTree>
-        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__time(dd:hh:ss,)}" enabled="true">
+        <HTTPSamplerProxy guiclass="HttpTestSampleGui" testclass="HTTPSamplerProxy" testname="${__time(hh:mm:ss,)}" enabled="true">
           <elementProp name="HTTPsampler.Arguments" elementType="Arguments" guiclass="HTTPArgumentsPanel" testclass="Arguments" testname="User Defined Variables" enabled="true">
             <collectionProp name="Arguments.arguments"/>
           </elementProp>
@@ -88,7 +88,7 @@
               <connectTime>true</connectTime>
             </value>
           </objProp>
-          <stringProp name="filename">/Users/raffaelerusso/Documents/GitHub/Workload-characterization-/client/aggregate.csv</stringProp>
+          <stringProp name="filename">/Users/raffaelerusso/Documents/GitHub/Workload-characterization-/client/aggr_report.csv</stringProp>
         </ResultCollector>
         <hashTree/>
       </hashTree>
